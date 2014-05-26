@@ -1,0 +1,351 @@
+/*GENERAL STUFF*/
+
+html, 
+body,
+section, 
+.wrapper
+{	margin: 0; 
+	padding: 0; 
+	height: 100%;
+	width: 100%;
+	min-width: 750px;
+}
+
+a, li {
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:visited  {
+	color: #777;
+}
+
+a:hover, a:active, a:focus {
+	color: royalblue;
+}
+div { margin: 0; padding: 0;}
+hr {width: 100px;}
+
+.main-body {
+
+}
+
+.filler { 
+	width: 100%; height: 100px; 
+	background: #333;
+	clear: both;
+}
+
+
+/*NAVIGATION*/
+
+nav {
+	position: fixed;
+	background: #333;
+	width: 100%;
+	height: 80px; 
+	text-align: center;
+	top:0;
+
+}
+
+.logo-wrap { 
+	width: 350px;
+	height: 60px;
+	margin-left: 15px;
+	margin-top: 5px;
+	float: left;
+}
+
+nav .logo {
+	display: inline-block;
+	float: left;
+	color: floralwhite;
+	font-family: Impact, sans-serif;
+	font-size: 3em;
+	margin-top: 7px 
+}
+
+nav .logo-wrap p {
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 0.5em;
+	color: floralwhite;
+	margin: 48px 0 0 10px;
+	float: left;
+}
+
+/*Navigation button*/
+
+.button-wrap {
+	width: 330px;
+	height: 60px;
+	float: right;
+}
+
+nav h1 { padding: 0; margin: 0; }
+
+nav .button-wrap .grow a { 
+	display: inline-block;
+	float: left;
+	margin-right:20px;
+	margin-top: 12px;
+	display: inline-block;
+	padding: 5px 8px;
+	border-radius: 5px;
+	color: #333;
+	background: floralwhite;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.grow a:visited{
+
+}
+
+.grow a:hover, .grow a:focus, .grow a:active {
+  background-color: lavender;
+  color: #555;
+}
+
+
+/*contents- INTRODuCTION*/
+
+#hello {
+background: url('../img/dica.jpg') no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin-top: 80px;
+height: 95%;
+
+
+
+}
+
+.hello-text-wrap {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 860px;
+	height: 450px;
+	margin: 0 auto;
+	margin-left: -430px;
+	margin-top: -235px;
+	background: white;
+	border-radius: 25px;
+
+	opacity: 0.86;
+
+}
+
+.hello-text-wrap p,
+.hello-text-wrap h1 {
+	font-family: sans-serif;
+}
+.hello-text-wrap .greetings {
+ width: 500px;
+ height: 200px;
+ margin: auto;
+ margin-top: 50px;
+}
+
+.hello-text-wrap h1 {
+	font-size: 3.5em;
+	margin: 0;
+}
+
+
+/*
+.hello-text-wrap .greetings {
+	width: 500px;
+	height: 200px;
+	position:absolute;
+	top: 25px;
+	left: 50%;
+	margin-left: -250px;
+}
+
+
+.hello-text-wrap p {
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	margin: 0 0;
+	margin-left: -250px;
+	top: 61%;
+
+}
+*/
+
+
+
+
+.main-body p,  {
+
+
+}
+
+
+
+
+.skills .titles,
+.education .titles,
+.experience .titles {
+	font-size: 5em;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+/*Content- EDUCATION*/
+.education {}
+
+
+.dates { 
+	float: left;
+	font-family: sans-serif;
+	letter-spacing: 0.5em;
+}
+
+
+/*CONTENT - SKILL SET*/
+
+.skills img {
+	width: 500px;
+	height: 350px;
+}
+
+
+
+/*CONTACT FORM*/
+
+
+#contact-area {
+	float: left;
+	width: 450px;
+	background: white;
+	border-radius: 5px;
+	margin-left: 10%;
+	padding: 30px;
+
+}
+
+.label {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+label, input, textarea {
+
+	display: block;
+	width: 100%;
+}
+
+
+label {
+	font-family: sans-serif;
+
+}
+
+input, textarea { 
+	
+	height: 30px;
+	border: solid 0.1em #777;
+	border-radius: 3px;
+}
+
+
+textarea {
+	height: 200px;
+}
+
+.submit-button {
+	width: 80px;
+	height: 40px;
+	background-color: #333;
+	border: none;
+	border-radius: 5px;
+
+	color: floralwhite;
+	font-size: 1em;
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+.submit-button:hover,
+.submit-button:focus,
+.submit-button:active {
+
+	background-color: lavender;
+	color: #777;
+}
+
+/*SOCIAL LINKS*/
+
+.social-media {
+	background: salmon;
+	width: 300px;
+	height: 300px;
+	float: right;
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: #333;
+}
+
+footer p {
+	display: inline-block;
+	color: floralwhite;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font: 0.8em sans-serif;
+}
+
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+}
+
+.clearfix:after {
+	clear: both;
+	}
+
+
+/*
+.content {
+	width: 100%;
+	height: 350px;
+}
+
+.image-wrap {
+	margin: auto;
+	 width: 100%;
+	 height: 200px;
+}
+.image {
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+   
+}*/
