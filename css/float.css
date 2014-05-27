@@ -1,4 +1,6 @@
+
 /*GENERAL STUFF*/
+* {font-family: sans-serif;}
 
 html, 
 body,
@@ -9,45 +11,81 @@ section,
 	height: 100%;
 	width: 100%;
 	min-width: 750px;
+	
 }
 
-a, li {
+ul, a, li {
 	list-style: none;
 	text-decoration: none;
+	padding: 0;
 	margin: 0;
+}
+
+hr {
+	border: dotted 0.111em #fff;
+	opacity: 0.1;
+}
+}
+div { margin: 0; 
 	padding: 0;
 }
 
-a:visited  {
-	color: #777;
+.skills .titles,
+.titles
+ {
+	/*Titles of page*/
+	font-size: 6em;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 50px; 	
+	padding: 0;
+	letter-spacing: 0.125em;
+	
 }
 
-a:hover, a:active, a:focus {
-	color: royalblue;
+html {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
-div { margin: 0; padding: 0;}
-hr {width: 100px;}
 
-.main-body {
-
-}
 
 .filler { 
-	width: 100%; height: 100px; 
+	margin: 0;
+	width: 100%; height: 200px; 
+	
+/*	border-top: 2px dashed #777; 
+	border-bottom: 2px dashed #777; */
 	background: #333;
-	clear: both;
-}
+
+	
+	}
+
+div.filler-2 { 
+	margin: 0;
+	width: 100%; 
+	height: 500px; 
+	background: url('../img/bg-contact.jpg') no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+	}
 
 
 /*NAVIGATION*/
 
 nav {
 	position: fixed;
-	background: #333;
+	background: #000;
 	width: 100%;
 	height: 80px; 
 	text-align: center;
 	top:0;
+	opacity: 0.95;
 
 }
 
@@ -83,6 +121,7 @@ nav .logo-wrap p {
 	width: 330px;
 	height: 60px;
 	float: right;
+	
 }
 
 nav h1 { padding: 0; margin: 0; }
@@ -101,12 +140,16 @@ nav .button-wrap .grow a {
 	font-weight: bold;
 }
 
-.grow a:visited{
+nav .button-wrap a:visited {
+	
+	
 
 }
 
-.grow a:hover, .grow a:focus, .grow a:active {
-  background-color: lavender;
+nav .button-wrap a:hover, 
+nav .button-wrap a:focus, 
+nav .button-wrap a:active {
+  background-color: #af84ff;
   color: #555;
 }
 
@@ -114,20 +157,16 @@ nav .button-wrap .grow a {
 /*contents- INTRODuCTION*/
 
 #hello {
-background: url('../img/dica.jpg') no-repeat center center fixed;
+background: url('../img/bg-contact.jpg') no-repeat center center scroll;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-margin-top: 80px;
-height: 95%;
-
-
-
+height: 100%;
 }
 
-.hello-text-wrap {
 
+.hello-text-wrap {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -136,10 +175,10 @@ height: 95%;
 	margin: 0 auto;
 	margin-left: -430px;
 	margin-top: -235px;
-	background: white;
+	background: salmon;
 	border-radius: 25px;
 
-	opacity: 0.86;
+	opacity: 0.95;
 
 }
 
@@ -160,61 +199,161 @@ height: 95%;
 }
 
 
-/*
-.hello-text-wrap .greetings {
-	width: 500px;
+
+/*main body*/
+
+
+.main-body {
+  width: 100%;
+  height: 75%;
+  margin: 100px auto; 
+}
+
+
+section#edu-and-exp h1 {
+	margin-bottom:  60px;
+}
+
+.edu-position {
+	text-align: center;
+	width: 950px;
+	height: 700px;
+	margin: 150px auto;
+}
+
+.education-content, 
+.experience {
+	text-align: left;
+	margin: 0;
+	
+	}
+
+.education-content {
+	margin-bottom: 50px;
+}
+section#edu-and-exp p {
+	font-size: 0.95em;
+
+}
+/*Content- EDUCATION*/
+
+div.school-column a {
+	color: #777;
+}
+
+div.school-column a:hover,
+div.school-column a:focus,
+div.school-column a:active {
+	color: #af84ff;
+}
+
+div.school-column a:visited {
+	color: #db7971;
+}
+
+
+.education-content div,
+.experience div {
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	border-left: 2px dashed #333;
 	height: 200px;
-	position:absolute;
-	top: 25px;
-	left: 50%;
-	margin-left: -250px;
+	padding-left: 50px;
+	margin-left: 30px;
+	letter-spacing: 0.2em;
+}
+.experience div { height: 120px;}
+
+.dates-column { width: 100px;}
+.dates-column p { letter-spacing: 0.8em}
+div.dates-column span {margin-left: 3px;}
+
+.school-column,
+.client-col { width: 150px;}
+
+.degree-column,
+.job-col {
+	border-right:2px dashed #333;
+	width: 350px;
+	padding-right: 30px;
+}
+
+div.col-wrap {
+	background-color: yellow;
+	border: none;
+	margin: 0;
+	padding: 0 10px;
+	height: 100%;
+}
+
+/*CONTENT - SKILL SET*/
+
+section.skills {
+	text-align: center;
+	letter-spacing: 0.7em;
 }
 
 
-.hello-text-wrap p {
-	width: 500px;
-	height: 200px;
-	position: absolute;
-	left: 50%;
-	margin: 0 0;
-	margin-left: -250px;
-	top: 61%;
-
-}
-*/
-
-
-
-
-.main-body p,  {
-
-
+.skill-levels {
+	display: inline-block;	
+	float: left;		
+	width: 160px; 
+	height: 280px;
+	margin-right: 15px;
+	background: yellow;
 }
 
+.skill-levels ol,
+.skill-levels li{
 
-
-
-.skills .titles,
-.education .titles,
-.experience .titles {
-	font-size: 5em;
-	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
 }
 
-/*Content- EDUCATION*/
-.education {}
-
-
-.dates { 
+.skill-levels li {
 	float: left;
-	font-family: sans-serif;
-	letter-spacing: 0.5em;
+	margin-bottom: 100px;
+	padding: 3px;
+	/*background: salmon;*/
+	
+}
+
+.expert-list,
+.efficient-list,
+.familiar-list {
+	margin-left: 30px;
+	margin-bottom: 95px;
+	letter-spacing: ;
+}
+
+.programs span {
+	float: left;
+	margin-right: 28px; 
+	padding: 5px;
+}
+
+.programs {
+	display: inline-block;
+	float: left;
+	margin-left: 15px;			
+	width: 680px; 
+	height: 280px;
+	border-left: 2px dashed #333;
+	/*background: yellow;*/
+}
+
+.skills-wrap {
+	
+	width: 900px;
+	margin: auto;
 }
 
 
-/*CONTENT - SKILL SET*/
+
+
+
+
 
 .skills img {
 	width: 500px;
@@ -223,7 +362,39 @@ height: 95%;
 
 
 
-/*CONTACT FORM*/
+
+
+/*CONTACT PAGE*/
+
+section#contact {
+	width: 100%;
+	height: 75%;
+	padding-top: 80px;
+	text-align: center;
+	background: white;
+	/*	background: url('../img/dica.jpg') no-repeat center center fixed;
+-moz-background-size: cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+background-size: cover;*/
+}
+
+.wrapper-contact {
+	text-align: left;
+	width: 860px;
+	margin: auto;
+}
+
+.social-media {
+	width: 150px;
+	height: 150px;
+	float: left;
+	letter-spacing: 2px;
+	font-family: sans-serif;
+	font-size: 0.8em;
+	margin-left: 50px;
+	
+}
 
 
 #contact-area {
@@ -231,10 +402,19 @@ height: 95%;
 	width: 450px;
 	background: white;
 	border-radius: 5px;
-	margin-left: 10%;
-	padding: 30px;
-
+	margin-left: 50px
 }
+
+
+
+
+
+
+/********
+CONTACT FORM
+************/
+
+
 
 .label {
 	margin-bottom: 5px;
@@ -281,39 +461,56 @@ textarea {
 .submit-button:focus,
 .submit-button:active {
 
-	background-color: lavender;
+	background-color: #af84ff;
 	color: #777;
 }
 
 /*SOCIAL LINKS*/
 
-.social-media {
-	background: salmon;
-	width: 300px;
-	height: 300px;
-	float: right;
+
+div.social-media li {
+	display: block;
+	margin: 20px 0;
 }
 
+div.social-media a {
+	color: #333;
+	padding: 5px;
+}
 
+div.social-media a:visited {
+	color: #777 ;
+}
 
+div.social-media a:hover, 
+div.social-media a:focus, 
+div.social-media a:active {
+  
+  color: #555;
+}
 
+div.social-media .call { 
+	line-height: 1em;
+}
 
 /*FOOTER*/
 
 footer {
+	display: block;
 	width: 100%;
 	height: 50px;
-	text-align: center;
 	background: #333;
-}
+	clear: both;
+	}
 
 footer p {
 	display: inline-block;
 	color: floralwhite;
-	text-transform: uppercase;
 	margin-top: 20px;
-	font: 0.8em sans-serif;
+	margin-left: 25px;
+	font: 0.7em sans-serif;
 }
+
 
 
 /* clearfix */
@@ -327,25 +524,3 @@ footer p {
 .clearfix:after {
 	clear: both;
 	}
-
-
-/*
-.content {
-	width: 100%;
-	height: 350px;
-}
-
-.image-wrap {
-	margin: auto;
-	 width: 100%;
-	 height: 200px;
-}
-.image {
-    background-attachment: fixed;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    position: relative;
-   
-}*/
