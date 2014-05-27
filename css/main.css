@@ -56,9 +56,6 @@ background-size: cover;
 .filler { 
 	margin: 0;
 	width: 100%; height: 200px; 
-	
-/*	border-top: 2px dashed #777; 
-	border-bottom: 2px dashed #777; */
 	background: #333;
 
 	
@@ -141,8 +138,6 @@ nav .button-wrap .grow a {
 }
 
 nav .button-wrap a:visited {
-	
-	
 
 }
 
@@ -177,7 +172,6 @@ height: 100%;
 	margin-top: -235px;
 	background: salmon;
 	border-radius: 25px;
-
 	opacity: 0.95;
 
 }
@@ -201,6 +195,9 @@ height: 100%;
 
 
 /*main body*/
+div#secion-2-locator { 
+	display: none;}
+
 
 
 .main-body {
@@ -263,6 +260,7 @@ div.school-column a:visited {
 	margin-left: 30px;
 	letter-spacing: 0.2em;
 }
+
 .experience div { height: 120px;}
 
 .dates-column { width: 100px;}
@@ -349,12 +347,6 @@ section.skills {
 	margin: auto;
 }
 
-
-
-
-
-
-
 .skills img {
 	width: 500px;
 	height: 350px;
@@ -372,11 +364,6 @@ section#contact {
 	padding-top: 80px;
 	text-align: center;
 	background: white;
-	/*	background: url('../img/dica.jpg') no-repeat center center fixed;
--moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;*/
 }
 
 .wrapper-contact {
@@ -420,8 +407,8 @@ CONTACT FORM
 	margin-bottom: 5px;
 	margin-top: 5px;
 }
-label, input, textarea {
 
+label, input, textarea {
 	display: block;
 	width: 100%;
 }
@@ -429,7 +416,6 @@ label, input, textarea {
 
 label {
 	font-family: sans-serif;
-
 }
 
 input, textarea { 
