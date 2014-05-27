@@ -135,9 +135,11 @@ nav .button-wrap .grow a {
 	background: floralwhite;
 	font-family: sans-serif;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 nav .button-wrap a:visited {
+	color: #af84ff;
 
 }
 
@@ -195,10 +197,6 @@ height: 100%;
 
 
 /*main body*/
-div#secion-2-locator { 
-	display: none;}
-
-
 
 .main-body {
   width: 100%;
